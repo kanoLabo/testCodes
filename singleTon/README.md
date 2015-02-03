@@ -1,0 +1,2 @@
+# TypeScriptでSingleton
+TypeScriptでSingletonを使うテストコード
