@@ -2,8 +2,9 @@
 var DEBUG_MODE:boolean = true;
 
 /**
- * コンソールにログを出力します。
- * @param {string[]} ...args スクロール時間のミリ秒です。
+ * デバッグモードが有効で、console.log()が使える時に、
+ * コンソールに文字列を出力します。
+ * @param {string[]} ...args 出力したい文字列です。
  */
 function trace(...args:string[]):void {
     if (DEBUG_MODE && this.console && typeof console.log != "undefined") {
