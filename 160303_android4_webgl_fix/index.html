@@ -38,12 +38,12 @@
 	<a onclick="togglePins();">Pins</a>
 </div>
 
-<script src="http://takahirox.github.io/test/build/three.js"></script>
+<script src="../build/three.js"></script>
 
-<script src="http://takahirox.github.io/test/examples/js/Detector.js"></script>
-<script src="http://takahirox.github.io/test/examples/js/libs/stats.min.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/libs/stats.min.js"></script>
 
-<script src="http://takahirox.github.io/test/examples/js/Cloth.js"></script>
+<script src="js/Cloth.js"></script>
 
 <script type="x-shader/x-fragment" id="fragmentShaderDepth">
 
@@ -129,9 +129,7 @@
 	var rotate = true;
 
 	init();
-	//animate();
-
-	setInterval(animate, 1000 / 60);
+	animate();
 
 	function init() {
 
@@ -180,7 +178,7 @@
 		// cloth material
 
 		var loader = new THREE.TextureLoader();
-		var clothTexture = loader.load( 'http://takahirox.github.io/test/examples/textures/patterns/circuit_pattern.png' );
+		var clothTexture = loader.load( 'textures/patterns/circuit_pattern.png' );
 		clothTexture.wrapS = clothTexture.wrapT = THREE.RepeatWrapping;
 		clothTexture.anisotropy = 16;
 
@@ -225,7 +223,7 @@
 
 		// ground
 
-		var groundTexture = loader.load( "http://takahirox.github.io/test/examples/textures/terrain/grasslight-big.jpg" );
+		var groundTexture = loader.load( "textures/terrain/grasslight-big.jpg" );
 		groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
 		groundTexture.repeat.set( 25, 25 );
 		groundTexture.anisotropy = 16;
@@ -323,7 +321,7 @@
 
 	function animate() {
 
-		//requestAnimationFrame( animate );
+		requestAnimationFrame( animate );
 
 		var time = Date.now();
 
