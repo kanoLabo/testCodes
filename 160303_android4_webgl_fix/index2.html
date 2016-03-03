@@ -130,12 +130,8 @@
 
 	init();
 	//animate();
-
-	window.addEventListener("load", function () {
-		setInterval(animate, 1000 / 60);
-		animate();
-	});
-
+	setInterval(animate, 1000 / 60);
+	animate();
 
 	function init() {
 
@@ -284,8 +280,9 @@
 		scene.add( mesh );
 
 		//
+		//renderer = new THREE.WebGLRenderer( { antialias: true } );
+		renderer = new THREE.WebGLRenderer( { antialias: true, precision:'medium'} );
 
-		renderer = new THREE.WebGLRenderer( { antialias: true } );
 		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		renderer.setClearColor( scene.fog.color );
