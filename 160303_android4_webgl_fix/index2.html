@@ -128,11 +128,12 @@
 
 	var rotate = true;
 
-	init();
-	//animate();
-	setInterval(animate, 1000 / 60);
-	animate();
-
+	window.addEventListener("load", function () {
+		init();
+		//animate();
+		setInterval(animate, 1000 / 60);
+		animate();
+	});
 	function init() {
 
 		container = document.createElement( 'div' );
