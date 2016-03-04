@@ -280,8 +280,8 @@
 		scene.add( mesh );
 
 		//
-		renderer = new THREE.WebGLRenderer( { antialias: true} );
-		renderer.precision = "mediump";
+		renderer = new THREE.WebGLRenderer( { antialias: true, precision:"mediump"} );
+//		renderer.precision = "mediump";
 		alert("renderer.getPrecision():" + renderer.getPrecision());
 
 		renderer.setPixelRatio( window.devicePixelRatio );
