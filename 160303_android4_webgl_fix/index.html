@@ -282,6 +282,7 @@
 		//
 		//renderer = new THREE.WebGLRenderer( { antialias: true } );
 		renderer = new THREE.WebGLRenderer( { antialias: true, precision:'mediump'} );
+		alert("renderer.getPrecision():" + renderer.getPrecision());
 
 		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( window.innerWidth, window.innerHeight );
