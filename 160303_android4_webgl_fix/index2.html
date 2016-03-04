@@ -128,12 +128,11 @@
 
 	var rotate = true;
 
-	window.addEventListener("load", function () {
-		init();
-		//animate();
-		setInterval(animate, 1000 / 60);
-		animate();
-	});
+	init();
+	//animate();
+	setInterval(animate, 1000 / 60);
+	animate();
+
 	function init() {
 
 		container = document.createElement( 'div' );
@@ -282,7 +281,8 @@
 
 		//
 		//renderer = new THREE.WebGLRenderer( { antialias: true } );
-		renderer = new THREE.WebGLRenderer( );
+		renderer = new THREE.WebGLRenderer( { antialias: true} );
+		renderer.precision = "mediump";
 
 		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( window.innerWidth, window.innerHeight );
@@ -294,6 +294,9 @@
 		renderer.gammaOutput = true;
 
 		renderer.shadowMap.enabled = true;
+
+		alert("renderer.precision:" + renderer.precision);
+
 
 		//
 
