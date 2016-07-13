@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample1</title>
+  <style>
+    img {display: block; margin: 0 auto;}
+  </style>
+</head>
+<body>
+<picture>
+  <!--source[media="(max-width: $$$@700px)"][srcset="images/frame_$$$.jpg"]*200-->
+  <source media="(max-width: 700px)" srcset="images/a.png">
+  <source media="(max-width: 900px)" srcset="images/b.png">
+  <source srcset="images/c.png">
+  <img src="images/c.png" alt="">
+</picture>
+</body>
+</html>
