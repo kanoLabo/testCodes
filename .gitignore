@@ -1,2 +1,4 @@
 /170430_svg/.idea/
 *.map
+.DS_Store
+node_modules
