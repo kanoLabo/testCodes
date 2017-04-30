@@ -1941,6 +1941,7 @@ __webpack_require__(0);
 __webpack_require__(1);
 var Main = (function () {
     function Main() {
+        this.SUDA_NUM = 100;
         this.fetchAndAppendSVG();
     }
     Main.prototype.fetchAndAppendSVG = function () {
@@ -1952,7 +1953,7 @@ var Main = (function () {
                     case 1:
                         svgString = _a.sent();
                         container = document.getElementById("container");
-                        for (i = 0; i < 100; i++) {
+                        for (i = 0; i < this.SUDA_NUM; i++) {
                             div = document.createElement("div");
                             div.className = "suda";
                             div.innerHTML = svgString;
