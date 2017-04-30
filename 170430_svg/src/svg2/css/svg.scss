@@ -1,0 +1,32 @@
+#sudaSVG {
+  animation: scale 1s ease infinite alternate;
+  transform-origin: 50% 50%;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+#suda {
+  animation: rainbow 10s ease infinite alternate;
+}
+
+@keyframes rainbow {
+  // キーフレームの長さ-1
+  $keyFrameLength: 4;
+
+  @for $i from 0 through $keyFrameLength {
+    #{(100 / $keyFrameLength) * $i + "%"} {
+      $h: (360 / $keyFrameLength) * $i;
+      $color: hsl($h, 100, 30);
+      fill: $color;
+    }
+  }
+}
+
