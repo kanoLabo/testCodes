@@ -1,0 +1,2 @@
+"<div id=\"hoge\">\n\u30E9\u30FC\u30E1\u30F3\u30FB\u3064\u3051\u3081\u3093\u30FB\u50D5\u4E2D\u672C\u306E\u62C5\u3005\u9EBA'\n</div>";
+//# sourceMappingURL=hoge.js.map
