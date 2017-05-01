@@ -1,0 +1,37 @@
+$keyColor: #00bcf2;
+$whiteColor: #ffffff;
+
+
+/* main要素を上下中央揃えするための設定 */
+html, body, main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 背景を白色に */
+body {
+  background-color: $keyColor;
+}
+
+/* Windowsロゴの為のスタイル設定 */
+#windowsLogo {
+  width: 400px;
+  height: 300px;
+
+  display: flex;  // 子要素(div)をflexアイテムに
+  flex-wrap: wrap;// flexアイテムを複数ラインに
+  justify-content: space-between;// flexアイテムの水平方向の並べ方
+  align-content: space-between;// flexアイテムの垂直方向の並べ方
+  transform: perspective(455px) rotateY(-25deg);  // ロゴ全体を傾ける
+
+  div {
+    width: 48%;
+    height: 48%;
+    background: $whiteColor;
+  }
+}

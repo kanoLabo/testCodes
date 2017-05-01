@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* main要素を上下中央揃えするための設定 */
+html, body, main {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 背景を白色に */
+body {
+    background-color: #00bcf2;
+}
+
+/* Windowsロゴの為のスタイル設定 */
+#windowsLogo {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    transform: perspective(455px) rotateY(-25deg);
+}
+
+#windowsLogo div {
+    width: 48%;
+    height: 48%;
+    background: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
